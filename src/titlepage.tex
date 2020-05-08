@@ -1,3 +1,61 @@
+\def\ignore#1{}
+\let\orignewcommand\newcommand
+\let\origNeedsTeXFormat\NeedsTeXFormat
+
+\let\newcommand\renewcommand
+\makeatletter
+\input{size12.clo}%
+\makeatother  
+\let\newcommand\orignewcommand
+
+\makeatletter
 \begin{titlepage}
-  АААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААа
+ \newgeometry{top=20mm,bottom=20mm,left=20mm,right=15mm,nohead,includeheadfoot}
+ \setlength{\parskip}{1em}
+ \setlength{\parindent}{0pt}
+ \begin{center}
+  Федеральное государственное автономное образовательное учреждение \\
+  высшего образования \\
+  «Национальный исследовательский университет «Высшая школа экономики»
+
+  Факультет Санкт-Петербургская школа физико-математических и компьютерных наук \\
+  Департамент информатики
+
+  Основная профессиональная образовательная программа \\
+  «Прикладная математика и информатика»
+
+  \vspace{3em}
+
+  {\bfseries ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ РАБОТА} \\
+  на тему \\
+  {\bfseries\@title}
+ \end{center}
+
+ \vspace{3em}
+
+ Выполнил студент группы БПМ161, 4 курса, \\
+ \null\hfill \@author
+
+ \vspace{3em}
+
+ Научный руководитель: \\
+ \null\hfill Кандидат физико-математических наук, \\
+ \null\hfill доцент департамента информатики, \\
+ \null\hfill Близнец Иван Анатольевич
+
+ \vfill
+
+ \begin{center}
+  Санкт-Петербург \\
+  2020
+ \end{center}
 \end{titlepage}
+\makeatother
+
+\let\NeedsTeXFormat\ignore
+\let\newcommand\renewcommand
+\makeatletter
+\input{size14.clo}%
+\makeatother  
+\let\newcommand\orignewcommand
+\let\NeedsTeXFormat\origNeedsTeXFormat
