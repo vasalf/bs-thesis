@@ -1,7 +1,24 @@
 \documentclass[a4paper,14pt]{extarticle}
 
-\begin{document}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{fontspec}
+\usepackage{polyglossia}
 
- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa
+\defaultfontfeatures{Ligatures={TeX}}
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+
+\setdefaultlanguage[spelling=modern]{russian}
+\frenchspacing
+
+\newcommand{\ovl}[1]{\overline{#1}}
+
+\title{Новый алгоритм для задачи выполнения наибольшего количества дизъюнктов}
+\author{Алфёров Василий Викторович}
+
+\begin{document}
+ \include{src/titlepage}
 
 \end{document}
