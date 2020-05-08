@@ -6,6 +6,9 @@
 \usepackage{polyglossia}
 \usepackage[colorlinks=true,urlcolor=black,linkcolor=black,filecolor=black,citecolor=black]{hyperref}
 \usepackage{geometry}
+\usepackage[style=gost-numeric]{biblatex}
+\usepackage{setspace}
+\usepackage{lipsum}
 
 \defaultfontfeatures{Ligatures={TeX}}
 \setmainfont{CMU Serif}
@@ -13,7 +16,11 @@
 \setmonofont{CMU Typewriter Text}
 
 \setdefaultlanguage[spelling=modern]{russian}
+\setotherlanguage[variant=british]{english}
 \frenchspacing
+\onehalfspacing
+
+\addbibresource{main.bib}
 
 \newcommand{\ovl}[1]{\overline{#1}}
 
@@ -26,4 +33,6 @@
  \include{src/1-table-of-contents}
 
  \include{src/2-introduction}
+
+ \include{src/9-references}
 \end{document}
