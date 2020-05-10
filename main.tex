@@ -1,5 +1,6 @@
 \documentclass[a4paper,14pt]{extarticle}
 
+\usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{fontspec}
@@ -9,6 +10,7 @@
 \usepackage[style=gost-numeric]{biblatex}
 \usepackage{setspace}
 \usepackage{lipsum}
+\usepackage{caption}
 
 \defaultfontfeatures{Ligatures={TeX}}
 \setmainfont{CMU Serif}
@@ -26,6 +28,9 @@
 % For some reason indentfirst doesn't work.
 \newcommand{\firstpar}[1]{\hspace{1cm}}
 
+\captionsetup[table]{justification=raggedleft,singlelinecheck=false}
+\numberwithin{table}{section}
+
 \title{Новый алгоритм для задачи выполнения наибольшего количества дизъюнктов}
 \author{Алфёров Василий Викторович}
 
@@ -39,6 +44,8 @@
  \include{src/2-abstract}
 
  \include{src/3-introduction}
+
+ \include{src/4-literature-review}
 
  \include{src/9-references}
 \end{document}
