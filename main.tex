@@ -23,6 +23,8 @@
 \addbibresource{main.bib}
 
 \newcommand{\ovl}[1]{\overline{#1}}
+% For some reason indentfirst doesn't work.
+\newcommand{\firstpar}[1]{\hspace{1cm}}
 
 \title{Новый алгоритм для задачи выполнения наибольшего количества дизъюнктов}
 \author{Алфёров Василий Викторович}
@@ -32,7 +34,11 @@
 
  \include{src/1-table-of-contents}
 
- \include{src/2-introduction}
+ \setlength{\parindent}{1cm}
+
+ \include{src/2-abstract}
+
+ \include{src/3-introduction}
 
  \include{src/9-references}
 \end{document}
