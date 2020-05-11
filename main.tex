@@ -31,6 +31,15 @@
 \captionsetup[table]{justification=raggedleft,singlelinecheck=false}
 \numberwithin{table}{section}
 
+\theoremstyle{plain}
+\newtheorem{rrule}{Правило сокращения}[section]
+\newtheorem{brule}{Правило расщепления}[rrule]
+\newtheorem{lemma}{Лемма}[section]
+\newtheorem{theorem}{Теорема}[lemma]
+
+\theoremstyle{remark}
+\newtheorem*{note}{Замечание}
+
 \title{Новый алгоритм для задачи выполнения наибольшего количества дизъюнктов}
 \author{Алфёров Василий Викторович}
 
