@@ -11,6 +11,7 @@
 \usepackage{setspace}
 \usepackage{lipsum}
 \usepackage{caption}
+\usepackage{multirow}
 
 \defaultfontfeatures{Ligatures={TeX}}
 \setmainfont{CMU Serif}
@@ -33,12 +34,15 @@
 
 \theoremstyle{plain}
 \newtheorem{rrule}{Правило упрощения}[section]
-\newtheorem{brule}{Правило расщепления}[rrule]
+\newtheorem{brule}[rrule]{Правило расщепления}
 \newtheorem{lemma}{Лемма}[section]
-\newtheorem{theorem}{Теорема}[lemma]
+\newtheorem{theorem}[lemma]{Теорема}
 
 \theoremstyle{remark}
 \newtheorem*{note}{Замечание}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}[section]
 
 \title{Новый алгоритм для задачи выполнения наибольшего количества дизъюнктов}
 \author{Алфёров Василий Викторович}
@@ -55,6 +59,8 @@
  \include{src/3-introduction}
 
  \include{src/4-literature-review}
+
+ \include{src/5-measure}
 
  \include{src/9-references}
 \end{document}
